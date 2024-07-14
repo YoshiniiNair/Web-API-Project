@@ -1,0 +1,29 @@
+GET http://localhost:3000/movies
+
+###
+
+GET http://localhost:3000/movies/6692cd3d71e5a593898fc581
+
+###
+
+POST http://localhost:3000/movies
+Content-Type: application/json
+
+{
+    "name": "Harry Potter and the Philosopher's Stone",
+    "releasedDate": "16th Novemer 2001"
+}
+
+###
+
+PATCH http://localhost:3000/movies/6692cd3d71e5a593898fc581
+Content-Type: application/json
+
+{
+    "name": "Harry Potter and the Prisoner of Azkaban",
+    "releasedDate": "31 May 2004"
+}
+
+###
+
+DELETE http://localhost:3000/movies/6692ce9c71e5a593898fc586
